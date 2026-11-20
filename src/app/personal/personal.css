@@ -1,0 +1,37 @@
+.personal {
+  margin: 26px 0;
+}
+
+.personal p {
+  color: #555555;
+}
+
+.interest-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 16px;
+  margin-top: 14px;
+}
+
+.interest {
+  border: 1px solid #d8c3cb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: #ffffff;
+  color: #252525;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.interest:hover {
+  border-color: #7a1f3d;
+  background: #f8f1f4;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .interest-list {
+    grid-template-columns: 1fr;
+  }
+}

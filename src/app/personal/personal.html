@@ -1,0 +1,12 @@
+<section class="personal">
+  <h2 class="section-title">Personal Interests</h2>
+  <p>A few things that describe {{ fullName() }} from {{ location() }}:</p>
+
+  <div class="interest-list">
+    @for (interest of interests(); track interest) {
+      <button type="button" class="interest" (click)="selectInterest(interest)">
+        {{ interest }}
+      </button>
+    }
+  </div>
+</section>
